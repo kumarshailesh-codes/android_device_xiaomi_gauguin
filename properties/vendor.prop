@@ -181,6 +181,9 @@ ro.hardware.keystore_desede=true
 debug.stagefright.c2inputsurface=-1
 vendor.media.target.version=3
 
+# USB (Device as Webcam Color Calibration)
+ro.usb.uvc.disable_video_encode_flag=true
+
 # Netflix
 ro.netflix.bsp_rev=Q7250-19133-1
 
