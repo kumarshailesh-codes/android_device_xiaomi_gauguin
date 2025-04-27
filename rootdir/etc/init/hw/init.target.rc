@@ -220,3 +220,22 @@ on property:vendor.camera.bokeh.disable=1
 
 on property:vendor.camera.bokeh.disable=0
     setprop persist.vendor.camera.bokeh.disable 0
+
+# USB UVC (Device as Webcam Bandwidth Scaling)
+on property:sys.boot_completed=1 && property:vendor.usb.uvc.function.init=1 && property:vendor.usb.uvc.payload_transfer_size=*
+    write /config/usb_gadget/g1/functions/uvc.0/streaming_maxpacket ${vendor.usb.uvc.payload_transfer_size}
+
+on property:vendor.usb.current_speed=low-speed
+    setprop vendor.usb.uvc.payload_transfer_size 1024
+
+on property:vendor.usb.current_speed=full-speed
+    setprop vendor.usb.uvc.payload_transfer_size 1024
+
+on property:vendor.usb.current_speed=high-speed
+    setprop vendor.usb.uvc.payload_transfer_size 1024
+
+on property:vendor.usb.current_speed=super-speed
+    setprop vendor.usb.uvc.payload_transfer_size 3072
+
+on property:vendor.usb.current_speed=super-speed-plus
+    setprop vendor.usb.uvc.payload_transfer_size 3072
