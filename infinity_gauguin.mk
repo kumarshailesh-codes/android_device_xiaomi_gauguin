@@ -11,7 +11,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from gauguin device
 $(call inherit-product, device/xiaomi/gauguin/device.mk)
 
-# Inherit some common Lineage stuff.
+# Inherit some common infinity stuff.
 $(call inherit-product, vendor/infinity/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
