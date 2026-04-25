@@ -32,7 +32,7 @@ BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := default
 BOARD_KERNEL_CMDLINE := \
     androidboot.hardware=qcom \
     androidboot.memcg=1 \
-    lpm_levels.sleep_disabled=1 \
+    lpm_levels.sleep_disabled=0 \
     msm_rtb.filter=0x237 \
     service_locator.enable=1 \
     androidboot.usbcontroller=a600000.dwc3 \
@@ -41,17 +41,19 @@ BOARD_KERNEL_CMDLINE := \
     loop.max_part=7
 BOARD_KERNEL_CMDLINE += androidboot.init_fatal_reboot_target=recovery
 
-BOARD_KERNEL_IMAGE_NAME := Image
 BOARD_BOOTIMG_HEADER_VERSION := 2
+BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOTIMG_HEADER_VERSION)
+
+BOARD_KERNEL_IMAGE_NAME := Image
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_PAGESIZE := 4096
 BOARD_KERNEL_SEPARATED_DTBO := true
-BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOTIMG_HEADER_VERSION)
+
 BOARD_RAMDISK_USE_LZ4 := true
 
-TARGET_KERNEL_CONFIG := vendor/lito-perf_defconfig vendor/xiaomi/gauguin.config
 TARGET_KERNEL_NO_GCC := true
 TARGET_KERNEL_SOURCE := kernel/xiaomi/gauguin
+TARGET_KERNEL_CONFIG := vendor/lito-perf_defconfig vendor/xiaomi/gauguin.config
 
 # Platform
 TARGET_BOARD_PLATFORM := lito
@@ -92,6 +94,7 @@ DEVICE_MANIFEST_NFC_FILES := \
 BOARD_USES_METADATA_PARTITION := true
 
 # Partitions
+-include vendor/lineage/config/BoardConfigReservedSize.mk
 BOARD_FLASH_BLOCK_SIZE := 262144
 
 BOARD_BOOTIMAGE_PARTITION_SIZE := 134217728

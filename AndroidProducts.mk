@@ -4,4 +4,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/custom_gauguin.mk
+    $(LOCAL_DIR)/infinity_gauguin.mk

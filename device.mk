@@ -21,11 +21,13 @@ $(call inherit-product, vendor/xiaomi/gauguin/gauguin-vendor.mk)
 $(call inherit-product, hardware/qcom-caf/common/common.mk)
 
 # Overlays
+DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay-infinity
+
 PRODUCT_PACKAGES += \
     GauguinApertureOverlay \
     GauguinCarrierConfigOverlay \
     GauguinFrameworksOverlay \
-    GauguinLauncherOverlay \
     GauguinSettingsOverlay \
     GauguinSystemUIOverlay \
     GauguinTelephonyOverlay \
@@ -121,10 +123,10 @@ PRODUCT_COPY_FILES += \
 
 # Camera
 $(call soong_config_set_bool,camera,override_format_from_reserved,true)
-$(call soong_config_set,libcameraservice,ext_lib,//$(LOCAL_PATH):libcameraservice_extension.xiaomi_gauguin)
 
 PRODUCT_PACKAGES += \
-    android.hardware.camera.provider-service.lineage
+    android.hardware.camera.provider@2.4-impl \
+    android.hardware.camera.provider@2.4-service_64
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.camera.flash-autofocus.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.flash-autofocus.xml \
@@ -270,7 +272,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     vendor.lineage.health-service.default
 
-$(call soong_config_set_bool,lineage_health,charging_control_supports_bypass,false)
+$(call soong_config_set_bool,lineage_health,charging_control_supports_bypass,true)
 
 # Media
 PRODUCT_COPY_FILES += \
@@ -434,3 +436,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     firmware_wlan_mac.bin_symlink \
     firmware_WCNSS_qcom_cfg.ini_symlink
+    
+# MistOS OTA overlay
+PRODUCT_PACKAGES += \
+    UpdaterResGauguininfinity
+    

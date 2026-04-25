@@ -57,3 +57,6 @@ wifi.interface=wlan0
 
 # Vendor
 ro.vendor.qti.va_aosp.support=1
+
+persist.sys.perf.scroll_opt=true
+persist.sys.perf.scroll_opt.heavy_app=1

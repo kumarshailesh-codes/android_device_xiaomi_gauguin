@@ -1,0 +1,12 @@
+<resources>
+    <bool name="config_prioritizeUpdateProcess">true</bool>
+
+    <string name="updater_server_url" translatable="false">
+        https://raw.githubusercontent.com/kumarshailesh-codes/infinityx_ota/main/gauguin.json
+    </string>
+
+    <string name="menu_changelog_url" translatable="false">
+        https://raw.githubusercontent.com/kumarshailesh-codes/infinityx_ota/main/gauguin.txt
+    </string>
+</resources>
+
