@@ -28,12 +28,6 @@ PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildDesc="gauguin-user 12 RKQ1.200826.002 V14.0.2.0.SJSMIXM release-keys" \
     BuildFingerprint=Xiaomi/gauguin_global/gauguin:12/RKQ1.200826.002/V14.0.2.0.SJSMIXM:user/release-keys
-    
-    DeviceProduct=gauguin \
-    SystemName=gauguin \
-    BuildFlavor="gauguin-user" \
-    BuildHostname="shailesh-build" \
-    BuildUsername="Shailesh"
 
 # Infinity X Maintainer
 INFINITY_MAINTAINER := "Shailesh"
@@ -52,3 +46,7 @@ TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_INCLUDE_GOOGLE_DIALER := false
 MAX_EGL_CACHE_KEY_SIZE := 12*1024
 MAX_EGL_CACHE_SIZE := 2048*1024
+
+# Inherit Camera-related flags
+TARGET_USES_MIUI_CAMERA := true
+TARGET_INCLUDES_MIUI_CAMERA := true

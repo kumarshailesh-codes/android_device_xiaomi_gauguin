@@ -437,8 +437,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     firmware_wlan_mac.bin_symlink \
     firmware_WCNSS_qcom_cfg.ini_symlink
-    
+
 # MistOS OTA overlay
 PRODUCT_PACKAGES += \
     UpdaterResGauguininfinity
-    
+# MiuiCamera
+$(call inherit-product-if-exists, device/xiaomi/miuicamera-gauguin/device.mk)
