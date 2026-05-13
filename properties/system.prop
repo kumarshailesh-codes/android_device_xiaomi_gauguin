@@ -1,3 +1,13 @@
+
+# Enable or disable ScrollOptimizer globally
+persist.sys.perf.scroll_opt = true
+
+# Heavy app handling mode
+# 0 - Disable heavy app classification
+# 1 - Enable dynamic detection (based on frame duration and buffer load)
+# 2 - Treat all apps as heavy for performance
+persist.sys.perf.scroll_opt.heavy_app = 1
+
 # Camera
 vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,org.lineageos.aperture,org.lineageos.aperture.dev
 
@@ -57,3 +67,8 @@ wifi.interface=wlan0
 
 # Vendor
 ro.vendor.qti.va_aosp.support=1
+
+persist.sys.force_highend_gfx=true
+ro.vendor.qti.sys.fw.bg_apps_limit=60 
+ro.vendor.qti.config.zram=true                                                                                                                     
+persist.vendor.qti.games.gt.prof=1

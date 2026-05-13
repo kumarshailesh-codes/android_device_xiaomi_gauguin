@@ -270,7 +270,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     vendor.lineage.health-service.default
 
-$(call soong_config_set_bool,lineage_health,charging_control_supports_bypass,false)
+$(call soong_config_set_bool,lineage_health,charging_control_supports_bypass,true)
 
 # Media
 PRODUCT_COPY_FILES += \
@@ -430,3 +430,13 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     firmware_wlan_mac.bin_symlink \
     firmware_WCNSS_qcom_cfg.ini_symlink
+
+#OTA overlay
+PRODUCT_PACKAGES += \
+    UpdaterResGauguinaxion
+# AxBurstEngine (Performance Config)
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/axion/ax_perf_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ax_perf_config.xml
+
+# Qualcomm Specific Performance flags
+TARGET_DISABLES_LIBPERF := true
