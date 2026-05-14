@@ -1,4 +1,6 @@
-
+# Align SurfaceFlinger with 20-bucket uclamp architecture
+ro.surface_flinger.uclamp.min=0
+sys.use_fifo_ui=1
 # Enable or disable ScrollOptimizer globally
 persist.sys.perf.scroll_opt = true
 

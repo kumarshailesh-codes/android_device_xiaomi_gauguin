@@ -1,34 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <perf-config>
     <path name="dram_min_freq">/sys/class/devfreq/soc:qcom,cpu-cpu-llcc-bw/min_freq</path>
-    <int name="dram_boost_hz">2133000</int> <int name="dram_default_hz">0</int>
+    <int name="dram_boost_hz">2133000</int> 
+    <int name="dram_default_hz">0</int>
     <path name="gpu_opp_index">/sys/class/kgsl/kgsl-3d0/max_pwrlevel</path>
     <path name="gpu_opp_table">/sys/class/kgsl/kgsl-3d0/gpu_available_frequencies</path>
 
     <hint name="launch">
-        <res name="cpu_min_c0">1804800</res> <res name="cpu_min_c1">2208000</res> <res name="cpu_max_c0">1</res>
+        <res name="cpu_min_c0">1804800</res> 
+        <res name="cpu_min_c1">2208000</res> 
+        <res name="cpu_max_c0">1</res>
         <res name="cpu_max_c1">1</res>
         <res name="gpu_max">1</res>
         <res name="dram_min">-1</res>
-        <res name="uclamp_fg">100</res>
-        <res name="uclamp_top">100</res>
+        <res name="cpuset_svp">1</res>
+        <res name="uclamp_fg">1024</res>
+        <res name="uclamp_top">1024</res>
         <res name="rr_fling">1</res>
         <int name="duration_ms">2000</int>
     </hint>
 
     <hint name="fling">
         <res name="cpu_min_c1">1401600</res>
-        <res name="uclamp_fg">60</res>
-        <res name="rr_fling">1</res>
+        <res name="uclamp_fg">614</res> <res name="rr_fling">1</res>
         <int name="duration_ms">1000</int>
     </hint>
 
     <hint name="shade">
+        <res name="cpuset_svp">1</res>
+        <res name="cpuset_sysui">1</res>
         <res name="cpuset_top">1</res>
         <res name="gpu_boost">1</res>
         <res name="dram_min">-1</res>
-        <res name="uclamp_fg">60</res>
-        <res name="uclamp_top">60</res>
+        <res name="uclamp_fg">614</res>
+        <res name="uclamp_top">614</res>
     </hint>
 
     <hint name="gpu">
@@ -38,59 +43,79 @@
     <hint name="game">
         <res name="gpu_max">1</res>
         <res name="dram_min">-1</res>
-        <res name="uclamp_top">100</res>
-    </hint>
+        <res name="uclamp_top">819</res> </hint>
 
     <hint name="scroll_input">
         <res name="cpu_min_c0">1209600</res>
+        <res name="uclamp_fg">410</res>
         <int name="duration_ms">300</int>
     </hint>
 
     <hint name="scroll_prefiling">
         <res name="cpu_min_c0">1209600</res>
         <res name="dram_min">-1</res>
+        <res name="uclamp_fg">410</res>
         <int name="duration_ms">300</int>
     </hint>
 
     <hint name="scroll_vertical">
         <res name="cpu_min_c0">1209600</res>
+        <res name="uclamp_fg">410</res>
         <int name="duration_ms">300</int>
     </hint>
 
     <hint name="scroll_scroller">
         <res name="cpu_min_c0">1209600</res>
         <res name="gpu_boost">1</res>
+        <res name="uclamp_fg">512</res>
         <int name="duration_ms">300</int>
     </hint>
 
     <hint name="frame_prefetcher">
         <res name="dram_min">-1</res>
+        <res name="uclamp_top">512</res>
         <int name="duration_ms">100</int>
     </hint>
 
     <hint name="frame_real_draw">
         <res name="gpu_boost">1</res>
+        <res name="uclamp_top">716</res>
         <int name="duration_ms">100</int>
     </hint>
 
     <hint name="frame_obtain_view">
         <res name="cpu_min_c0">1209600</res>
+        <res name="uclamp_fg">512</res>
         <int name="duration_ms">100</int>
     </hint>
 
     <hint name="frame_render_info">
         <res name="cpu_min_c0">1209600</res>
+        <res name="uclamp_top">512</res>
         <int name="duration_ms">100</int>
     </hint>
 
     <hint name="ime_show_hide">
         <res name="cpu_min_c1">1401600</res>
+        <res name="uclamp_top">614</res>
         <int name="duration_ms">200</int>
     </hint>
 
     <hint name="ime_init">
         <res name="cpu_min_c1">1401600</res>
         <res name="dram_min">-1</res>
+        <res name="uclamp_top">614</res>
         <int name="duration_ms">200</int>
+    </hint>
+
+    <hint name="thermal_governor">
+        <res name="dram_min">-1</res>
+    </hint>
+    
+    <hint name="camera_launch">
+        <res name="cpu_min_c1">2208000</res>
+        <res name="gpu_max">1</res>
+        <res name="uclamp_top">1024</res>
+        <int name="duration_ms">1000</int>
     </hint>
 </perf-config>
