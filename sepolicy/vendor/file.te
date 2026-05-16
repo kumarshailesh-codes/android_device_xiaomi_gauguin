@@ -14,3 +14,5 @@ type vendor_thermal_data_file, file_type, data_file_type;
 
 type vendor_sysfs_axburst_gpu, fs_type, sysfs_type;
 type vendor_sysfs_axburst_mem, fs_type, sysfs_type;
+
+type sysfs_ax_perf, fs_type, sysfs_type;

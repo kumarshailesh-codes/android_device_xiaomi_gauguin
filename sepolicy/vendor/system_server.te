@@ -1,1 +1,15 @@
 allow system_server vendor_sysfs_battery_supply:file r_file_perms;
+allow system_server sysfs_ax_perf:file rw_file_perms;
+
+# AxBurstEngine: Allow system_server to access custom GPU/MEM nodes
+allow system_server vendor_sysfs_axburst_gpu:file rw_file_perms;
+allow system_server vendor_sysfs_axburst_mem:file rw_file_perms;
+
+# Allow system_server to access default Qualcomm GPU nodes
+allow system_server sysfs_kgsl:file rw_file_perms;
+
+# LLCC Bandwidth access
+allow system_server sysfs_devfreq:file rw_file_perms;
+
+# Default Qualcomm labels access
+allow system_server sysfs_devices_system_cpu:file rw_file_perms;
