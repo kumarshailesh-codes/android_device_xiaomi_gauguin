@@ -47,6 +47,4 @@ TARGET_INCLUDE_GOOGLE_DIALER := false
 MAX_EGL_CACHE_KEY_SIZE := 12*1024
 MAX_EGL_CACHE_SIZE := 2048*1024
 
-# Inherit Camera-related flags
-TARGET_USES_MIUI_CAMERA := true
-TARGET_INCLUDES_MIUI_CAMERA := true
+$(call inherit-product, vendor/bcr/bcr.mk)
