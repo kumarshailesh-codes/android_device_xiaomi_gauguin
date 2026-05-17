@@ -1,3 +1,6 @@
+# Call thr Bcr setup
+$(call inherit-product, vendor/bcr/bcr.mk)
+
 #
 # SPDX-FileCopyrightText: The LineageOS Project
 # SPDX-License-Identifier: Apache-2.0
