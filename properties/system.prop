@@ -90,6 +90,33 @@ net.tcp.hspap_init_rwnd=20
 net.tcp.umts_init_rwnd=20
 net.tcp.wifi_init_rwnd=20
 net.tcp.lte_init_rwnd=20
+persist.sys.tcp_cong_control=bbr
+
+# Scrolling & Smoothness
+ro.min_pointer_dur=8
+windowsmgr.max_events_per_sec=150
+ro.max.fling_velocity=15000
+ro.min.fling_velocity=8000
+persist.sys.scrolling.friction=0.005
+
+# JIT & Runtime
+dalvik.vm.jit.codecachesize=16
+dalvik.vm.jit.threshold=2048
+dalvik.vm.usejit=true
+dalvik.vm.usejitprofiles=true
+
+# Multitasking (LMK)
+ro.lmk.low=1001
+ro.lmk.medium=0
+ro.lmk.critical=0
+ro.lmk.vmpressure_period=70
+ro.lmk.upgrade_pressure=100
+ro.lmk.downupgrade_pressure=10
+
+# GMS Optimization
+ro.com.google.locationfeatures=0
+ro.com.google.clientidbase=android-xiaomi
+persist.sys.disable_analytics=1
 
 # Kernel & I/O
 ro.vendor.qti.core_ctl_min_cpu=2
