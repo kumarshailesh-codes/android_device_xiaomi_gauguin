@@ -36,8 +36,24 @@ media.stagefright.enable-http=true
 media.stagefright.enable-player=true
 media.stagefright.enable-qcp=true
 media.stagefright.enable-scan=true
-media.stagefright.thumbnail.prefer_hw_codecs=true
+media.stagefright.thumbnail.prefer_hw_codecs=false
+debug.stagefright.ccodec=4
+debug.media.codec2=1
+persist.media.codec2=1
 ro.media.recorder-max-base-layer-fps=60
+
+# Graphics & Performance
+debug.sf.enable_gl_backpressure=1
+debug.sf.disable_backpressure=0
+debug.cpurend.enable=1
+ro.surface_flinger.use_smart_90_for_video=true
+ro.surface_flinger.set_idle_timer_ms=250
+ro.surface_flinger.set_touch_timer_ms=300
+ro.surface_flinger.set_display_power_timer_ms=1000
+
+# Kernel & I/O
+ro.vendor.qti.core_ctl_min_cpu=2
+ro.vendor.qti.core_ctl_max_cpu=4
 
 # RIL
 persist.vendor.radio.report_codec=1

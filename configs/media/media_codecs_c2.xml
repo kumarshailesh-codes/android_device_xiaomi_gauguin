@@ -368,7 +368,7 @@
             <Feature name="bitrate-modes" value="CQ" />
             <Limit name="performance-point-512x512" value="2025" />
         </MediaCodec>
-        <MediaCodec name="c2.qti.heic.encoder" type="image/vnd.android.heic" >
+        <!-- <MediaCodec name="c2.qti.heic.encoder" type="image/vnd.android.heic" >
             <Alias name="OMX.qcom.video.encoder.heic"/>
             <Quirk name="requires-allocate-on-input-ports" />
             <Quirk name="requires-allocate-on-input-ports" />
@@ -383,7 +383,7 @@
             <Feature name="bitrate-modes" value="CQ" />
             <Limit name="performance-point-8192x4320" value="3" />
             <Limit name="performance-point-1920x1080" value="6" />
-        </MediaCodec>
+        </MediaCodec> -->
         <MediaCodec name="c2.qti.vp8.encoder" type="video/x-vnd.on2.vp8">
             <Limit name="size" min="128x128" max="4096x2176" />
             <Limit name="alignment" value="2x2" />
