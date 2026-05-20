@@ -181,6 +181,7 @@ ro.hardware.keystore_desede=true
 debug.stagefright.c2inputsurface=-1
 vendor.media.target.version=2
 ro.vendor.media.video.vpp.support=false
+vendor.media.omx=0
 
 # Netflix
 ro.netflix.bsp_rev=Q7250-19133-1
