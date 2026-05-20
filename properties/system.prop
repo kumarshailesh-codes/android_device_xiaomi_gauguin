@@ -58,9 +58,23 @@ ro.surface_flinger.has_HDR_display=true
 persist.sys.use_dithering=0
 persist.sys.ui.hw=1
 
+# Ultra-Touch
+touch.device.resample=1
+ro.screen.home_res.touch=1
+ro.product.multi_touch_enabled=true
+ro.product.max_num_touch_points=10
+
+# Efficiency (Disable Logging)
+persist.debug.wfd.enable=0
+persist.sys.print_all_logs=0
+config.disable_dumpheap=true
+profiler.force_disable_err_rpt=1
+profiler.force_disable_ulog=1
+
 # UX Improvements
 ro.config.vc_call_vol_steps=15
 ro.config.media_vol_steps=30
+ro.config.hw_quickpoweron=true
 
 # Background Optimization
 pm.dexopt.bg-dexopt=speed-profile
