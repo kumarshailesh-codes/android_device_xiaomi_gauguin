@@ -195,3 +195,6 @@ dalvik.vm.heapmaxfree=8m
 debug.hwui.use_hint_manager=true
 ro.vendor.display.cabl=0
 ro.adb.secure=1
+
+# Security & Permission Polish
+ro.control_privapp_permissions=enforce
