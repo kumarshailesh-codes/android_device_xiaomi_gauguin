@@ -190,3 +190,8 @@ dalvik.vm.heapsize=512m
 dalvik.vm.heaptargetutilization=0.75
 dalvik.vm.heapminfree=512k
 dalvik.vm.heapmaxfree=8m
+
+# Final Production Stability
+debug.hwui.use_hint_manager=true
+ro.vendor.display.cabl=0
+ro.adb.secure=1
