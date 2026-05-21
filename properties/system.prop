@@ -40,23 +40,24 @@ media.stagefright.thumbnail.prefer_hw_codecs=false
 debug.stagefright.ccodec=4
 ro.media.recorder-max-base-layer-fps=60
 
-# Performance & Smoothness
+# Performance & Smoothness (Release Stability Edition)
 dalvik.vm.dex2oat-filter=speed
 dalvik.vm.image-dex2oat-filter=speed
 dalvik.vm.dex2oat-threads=8
-debug.hwui.renderer=skiavk
+debug.hwui.renderer=skiagl
 debug.sf.enable_gl_backpressure=1
 debug.sf.disable_backpressure=0
 debug.cpurend.enable=1
 ro.surface_flinger.use_smart_90_for_video=true
-ro.surface_flinger.set_idle_timer_ms=250
-ro.surface_flinger.set_touch_timer_ms=300
+ro.surface_flinger.set_idle_timer_ms=100
+ro.surface_flinger.set_touch_timer_ms=200
 ro.surface_flinger.set_display_power_timer_ms=1000
 ro.surface_flinger.max_frame_buffer_acquired_buffers=3
 ro.surface_flinger.has_wide_color_display=true
 ro.surface_flinger.has_HDR_display=true
 persist.sys.use_dithering=0
 persist.sys.ui.hw=1
+persist.sys.binary_xml=true
 
 # Ultra-Touch
 touch.device.resample=1
@@ -119,13 +120,14 @@ dalvik.vm.jit.threshold=2048
 dalvik.vm.usejit=true
 dalvik.vm.usejitprofiles=true
 
-# Multitasking (LMK)
+# Multitasking (LMK - Release Balanced)
 ro.lmk.low=1001
-ro.lmk.medium=0
+ro.lmk.medium=800
 ro.lmk.critical=0
 ro.lmk.vmpressure_period=70
 ro.lmk.upgrade_pressure=100
 ro.lmk.downupgrade_pressure=10
+ro.vendor.qti.config.zram=true
 
 # GMS Optimization
 ro.com.google.locationfeatures=0
@@ -156,5 +158,35 @@ wifi.interface=wlan0
 # Vendor
 ro.vendor.qti.va_aosp.support=1
 
+# Stability Polish
 persist.sys.perf.scroll_opt=true
 persist.sys.perf.scroll_opt.heavy_app=1
+vendor.display.enable_early_wakeup=1
+debug.sf.enable_advanced_sf_phase_offset=1
+debug.renderengine.backend=gles
+
+
+# Final 100% Stability & Wi-Fi Range
+persist.sys.sqlite.sync_mode=0
+ro.vendor.qti.sys.fw.bg_apps_limit=60
+wifi.supplicant_scan_interval=180
+ro.vendor.display.sensortap=1
+
+# Masterpiece Final Polish
+ro.vendor.fingerprint.cleanup_unused_templates=1
+persist.vendor.fingerprint.ignore_small_template=1
+vendor.audio.offload.track.enable=true
+ro.vendor.qti.sys.fw.m_mem_cap=true
+
+# Full Power Pro Boss Tweak
+sys.use_fifo_ui=1
+ro.config.pinner_size=512
+persist.sys.pinner.enabled=true
+
+# Legendary Dalvik Heap Polish
+dalvik.vm.heapstartsize=8m
+dalvik.vm.heapgrowthlimit=256m
+dalvik.vm.heapsize=512m
+dalvik.vm.heaptargetutilization=0.75
+dalvik.vm.heapminfree=512k
+dalvik.vm.heapmaxfree=8m
