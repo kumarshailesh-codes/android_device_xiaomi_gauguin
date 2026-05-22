@@ -1,3 +1,5 @@
+LOCAL_PATH := device/xiaomi/gauguin
+
 # Call the Bcr setup
 $(call inherit-product, vendor/bcr/bcr.mk)
 
