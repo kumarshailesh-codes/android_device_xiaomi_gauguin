@@ -258,3 +258,7 @@ zygote.critical_window.minute=10
 persist.vendor.softap.vht80=1
 persist.vendor.wifi.dynamic_energy_window=1
 persist.vendor.wifi.vht80_2g=1
+
+# Wi-Fi HAL Configurations
+wifi.interface=wlan0
+ro.boot.wifichip.type=qcom

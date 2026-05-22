@@ -450,3 +450,8 @@ $(call inherit-product-if-exists, device/xiaomi/miuicamera-gauguin/device.mk)
 # Production optimizations
 PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
 PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
+
+PRODUCT_ENFORCE_RRO_EXCLUDED_PACKAGES := \
+    com.google.android.gms \
+    com.google.android.gsf \
+    com.android.vending

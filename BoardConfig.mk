@@ -37,7 +37,6 @@ BOARD_KERNEL_CMDLINE := \
     service_locator.enable=1 \
     androidboot.usbcontroller=a600000.dwc3 \
     swiotlb=2048 \
-    cgroup.memory=nokmem,nosocket \
     loop.max_part=7
 BOARD_KERNEL_CMDLINE += androidboot.init_fatal_reboot_target=recovery
 
@@ -203,4 +202,3 @@ include vendor/xiaomi/gauguin/BoardConfigVendor.mk
 
 # MiuiCamera
 -include device/xiaomi/miuicamera-gauguin/BoardConfig.mk
-BOARD_KERNEL_CMDLINE += cgroup.memory=nokmem
