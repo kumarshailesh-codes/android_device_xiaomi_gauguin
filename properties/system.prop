@@ -204,3 +204,9 @@ ro.product.marketname=Mi 10i
 ro.infinity.soc=Snapdragon® 750G (SM7225)
 ro.infinity.camera=108MP + 8MP + 2MP + 16MP(front)
 ro.infinity.display=1080 x 2400, 120 hz
+
+# Technical Stability Injection (kl.txt fixes)
+debug.stagefright.ccodec=1
+persist.vendor.audio.calfile.size=0
+persist.vendor.wifi.sap.interface=wlan0
+persist.vendor.wifi.vht80_2g=1

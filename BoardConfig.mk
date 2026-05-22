@@ -203,3 +203,4 @@ include vendor/xiaomi/gauguin/BoardConfigVendor.mk
 
 # MiuiCamera
 -include device/xiaomi/miuicamera-gauguin/BoardConfig.mk
+BOARD_KERNEL_CMDLINE += cgroup.memory=nokmem
