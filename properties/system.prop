@@ -37,8 +37,6 @@ media.stagefright.enable-player=true
 media.stagefright.enable-qcp=true
 media.stagefright.enable-scan=true
 media.stagefright.thumbnail.prefer_hw_codecs=false
-debug.stagefright.ccodec=4
-ro.media.recorder-max-base-layer-fps=60
 
 # Performance & Smoothness (Release Stability Edition)
 dalvik.vm.dex2oat-filter=speed
@@ -206,7 +204,12 @@ ro.infinity.camera=108MP + 8MP + 2MP + 16MP(front)
 ro.infinity.display=1080 x 2400, 120 hz
 
 # Technical Stability Injection (kl.txt fixes)
-debug.stagefright.ccodec=1
-persist.vendor.audio.calfile.size=0
 persist.vendor.wifi.sap.interface=wlan0
 persist.vendor.wifi.vht80_2g=1
+debug.stagefright.ccodec=1
+ro.media.recorder-max-base-layer-fps=60
+
+# Release Champion Injections
+ro.surface_flinger.protected_contents=true
+persist.vendor.audio.calfile.size=1
+ADSP_LIBRARY_PATH=/vendor/lib/rfsa/adsp;/system/lib/rfsa/adsp;/system/vendor/lib/rfsa/adsp;/dsp
