@@ -61,6 +61,7 @@ on early-boot
     write /sys/bus/msm_subsys/devices/subsys6/restart_level RELATED
 
 on boot
+    export ADSP_LIBRARY_PATH /vendor/lib/rfsa/adsp;/system/lib/rfsa/adsp;/dsp
     # This location is used by QCRIL to host UNIX domain
     # socket files used for internal IPC within QCRIL
     # modules

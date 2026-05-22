@@ -212,4 +212,6 @@ ro.media.recorder-max-base-layer-fps=60
 # Release Champion Injections
 ro.surface_flinger.protected_contents=true
 persist.vendor.audio.calfile.size=1
-ADSP_LIBRARY_PATH=/vendor/lib/rfsa/adsp;/system/lib/rfsa/adsp;/system/vendor/lib/rfsa/adsp;/dsp
+
+# Production Final Polish
+ro.statsd.enable=false
