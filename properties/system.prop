@@ -198,3 +198,9 @@ ro.adb.secure=1
 
 # Security & Permission Polish
 ro.control_privapp_permissions=enforce
+
+# Infinity X device info
+ro.product.marketname=Mi 10i
+ro.infinity.soc=Snapdragon® 750G (SM7225)
+ro.infinity.camera=108MP + 8MP + 2MP + 16MP(front)
+ro.infinity.display=1080 x 2400, 120 hz
