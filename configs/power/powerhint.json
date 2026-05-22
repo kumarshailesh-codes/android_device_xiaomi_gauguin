@@ -603,17 +603,5 @@
       "Duration": 0,
       "Value": "1766400"
     }
-    {
-      "PowerHint": "GAME",
-      "Node": "CPULittleClusterMinFreq",
-      "Duration": 0,
-      "Value": "1804801"
-    },
-    {
-      "PowerHint": "GAME",
-      "Node": "CPUBigClusterMinFreq",
-      "Duration": 0,
-      "Value": "2073601"
-    }
   ]
 }
