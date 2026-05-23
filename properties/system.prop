@@ -211,3 +211,17 @@ ro.media.recorder-max-base-layer-fps=60
 
 # Release Champion Injections
 ro.surface_flinger.protected_contents=true
+
+#device details
+ro.mist.display=1080 x 2400, 120 hz
+ro.mist.battery=5000mah
+ro.mist.soc=Snapdragon® 750G
+ro.mist.camera=108MP + 8MP + 2MP
+ro.mist.front=16MP
+ro.mist.platform=SM7225 
+ro.mist.screen=6.67' IPS LCD
+ro.mist.device.name=MI 10I 
+
+# AppOps and Core Permission Sync
+ro.config.per_app_memcg=false
+persist.sys.fflag.override.settings_provider_model=false

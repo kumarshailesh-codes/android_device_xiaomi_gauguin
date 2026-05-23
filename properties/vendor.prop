@@ -262,3 +262,8 @@ persist.vendor.wifi.vht80_2g=1
 # Wi-Fi HAL Configurations
 wifi.interface=wlan0
 ro.boot.wifichip.type=qcom
+
+# Telephony Framework Stability Fix
+persist.vendor.radio.custom_channels=true
+ro.telephony.default_network=33
+persist.vendor.radio.rat_on=combine

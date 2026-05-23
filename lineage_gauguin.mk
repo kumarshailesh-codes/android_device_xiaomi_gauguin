@@ -1,3 +1,8 @@
+TARGET_INCLUDE_PIXEL_LAUNCHER := true
+TARGET_INCLUDE_LIVE_WALLPAPERS := true
+
+# Now Playing
+TARGET_SUPPORTS_NOW_PLAYING := false
 #
 # SPDX-FileCopyrightText: The LineageOS Project
 # SPDX-License-Identifier: Apache-2.0
@@ -12,10 +17,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/gauguin/device.mk)
 
 # Inherit some common infinity stuff.
-$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := infinity_gauguin
+PRODUCT_NAME := lineage_gauguin
 PRODUCT_DEVICE := gauguin
 PRODUCT_MODEL := Gauguin
 PRODUCT_BRAND := Xiaomi
@@ -48,3 +53,10 @@ MAX_EGL_CACHE_KEY_SIZE := 12*1024
 MAX_EGL_CACHE_SIZE := 2048*1024
 
 $(call inherit-product, vendor/bcr/bcr.mk)
+
+# MistOS
+MISTOS_MAINTAINER := Shailesh
+WITH_GMS := true
+TARGET_ENABLE_BLUR := true
+TARGET_SUPPORTS_QUICK_TAP := true
+BYPASS_CHARGE_SUPPORTED := true
