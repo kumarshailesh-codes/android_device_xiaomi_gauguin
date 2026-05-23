@@ -1,8 +1,5 @@
 LOCAL_PATH := device/xiaomi/gauguin
 
-# Call the Bcr setup
-$(call inherit-product, vendor/bcr/bcr.mk)
-
 #
 # SPDX-FileCopyrightText: The LineageOS Project
 # SPDX-License-Identifier: Apache-2.0
@@ -328,10 +325,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/power/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
-
-# QTI
-PRODUCT_PACKAGES += \
-    libvndfwk_detect_jni.qti.vendor
 
 # Sensors
 PRODUCT_PACKAGES += \
