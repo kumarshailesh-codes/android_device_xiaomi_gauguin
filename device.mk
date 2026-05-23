@@ -1,3 +1,8 @@
+LOCAL_PATH := device/xiaomi/gauguin
+
+# Call the Bcr setup
+$(call inherit-product, vendor/bcr/bcr.mk)
+
 #
 # SPDX-FileCopyrightText: The LineageOS Project
 # SPDX-License-Identifier: Apache-2.0
@@ -21,14 +26,17 @@ $(call inherit-product, vendor/xiaomi/gauguin/gauguin-vendor.mk)
 $(call inherit-product, hardware/qcom-caf/common/common.mk)
 
 # Overlays
+DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay-lineage
+
 PRODUCT_PACKAGES += \
     GauguinApertureOverlay \
     GauguinCarrierConfigOverlay \
     GauguinFrameworksOverlay \
-    GauguinLauncherOverlay \
     GauguinSettingsOverlay \
     GauguinSystemUIOverlay \
     GauguinTelephonyOverlay \
+    GauguinLauncherOverlay \
     GauguinWifiOverlay
 
 PRODUCT_PACKAGES += \
@@ -321,6 +329,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/power/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
 
+# QTI
+PRODUCT_PACKAGES += \
+    libvndfwk_detect_jni.qti.vendor
+
 # Sensors
 PRODUCT_PACKAGES += \
     android.hardware.sensors@1.0-impl-xiaomi \
@@ -431,9 +443,21 @@ PRODUCT_PACKAGES += \
     firmware_wlan_mac.bin_symlink \
     firmware_WCNSS_qcom_cfg.ini_symlink
 
-#OTA overlay
+# MistOS OTA overlay
 PRODUCT_PACKAGES += \
     UpdaterResGauguinaxion
+# MiuiCamera
+$(call inherit-product-if-exists, device/xiaomi/miuicamera-gauguin/device.mk)
+
+# Production optimizations
+PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
+PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
+
+PRODUCT_ENFORCE_RRO_EXCLUDED_PACKAGES := \
+    com.google.android.gms \
+    com.google.android.gsf \
+    com.android.vending
+
 # AxBurstEngine (Performance Config)
 PRODUCT_COPY_FILES += \
     device/xiaomi/gauguin/configs/axion/ax_perf_resources.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ax_perf_resources.xml \

@@ -205,3 +205,8 @@ ro.media.recorder-max-base-layer-fps=60
 
 # Release Champion Injections
 ro.surface_flinger.protected_contents=true
+
+persist.sys.force_highend_gfx=true
+ro.vendor.qti.sys.fw.bg_apps_limit=60 
+ro.vendor.qti.config.zram=true                                                                                                                     
+persist.vendor.qti.games.gt.prof=1
