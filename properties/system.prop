@@ -210,5 +210,3 @@ persist.sys.force_highend_gfx=true
 ro.vendor.qti.sys.fw.bg_apps_limit=60 
 ro.vendor.qti.config.zram=true                                                                                                                     
 persist.vendor.qti.games.gt.prof=1
-
-media.stagefright.thumbnail.prefer_hw_codecs=true
