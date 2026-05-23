@@ -211,3 +211,5 @@ ro.media.recorder-max-base-layer-fps=60
 
 # Release Champion Injections
 ro.surface_flinger.protected_contents=true
+
+persist.vendor.radio.custom_channels=true
