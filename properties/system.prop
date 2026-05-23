@@ -222,3 +222,5 @@ ro.mist.device.name=MI 10I
 # AppOps and Core Permission Sync
 ro.config.per_app_memcg=false
 persist.sys.fflag.override.settings_provider_model=false
+
+persist.vendor.radio.custom_channels=true
