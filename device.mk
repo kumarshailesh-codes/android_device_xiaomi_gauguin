@@ -1,5 +1,3 @@
-PRODUCT_PACKAGES += \
-    UpdaterGMSOverlay
 LOCAL_PATH := device/xiaomi/gauguin
 
 # Call the Bcr setup

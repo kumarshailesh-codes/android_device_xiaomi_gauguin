@@ -205,6 +205,7 @@ ro.infinity.display=1080 x 2400, 120 hz
 
 # Technical Stability Injection (kl.txt fixes)
 persist.vendor.wifi.sap.interface=wlan0
+persist.vendor.wifi.softap.interface=wlan0
 persist.vendor.wifi.vht80_2g=1
 debug.stagefright.ccodec=1
 ro.media.recorder-max-base-layer-fps=60
@@ -213,3 +214,7 @@ ro.media.recorder-max-base-layer-fps=60
 ro.surface_flinger.protected_contents=true
 
 persist.vendor.radio.custom_channels=true
+
+# Pihooks defaults to prevent NumberFormatException
+persist.sys.pihooks_DEVICE_INITIAL_SDK_INT=30
+persist.sys.pihooks_SDK_INT=34

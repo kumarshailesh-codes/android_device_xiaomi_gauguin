@@ -46,6 +46,9 @@
     <ctl name="Voip Evrc Min Max Rate Config" id="1" value="4" />
     <ctl name="Voip Dtx Mode" value="0" />
     <ctl name="TTY Mode" value="OFF" />
+    <ctl name="Audio Stream Capture 39 App Type Cfg" value="69938" />
+    <ctl name="Audio Stream Capture 37 App Type Cfg" value="69938" />
+    <ctl name="Audio Stream Capture 29 App Type Cfg" value="69938" />
     <ctl name="SLIMBUS_7_RX Audio Mixer MultiMedia1" value="0" />
     <ctl name="SLIMBUS_7_RX Audio Mixer MultiMedia4" value="0" />
     <ctl name="SLIMBUS_7_RX Audio Mixer MultiMedia5" value="0" />
@@ -3430,6 +3433,7 @@
     </path>
 
     <path name="ultrasound-proximity-input">
+        <path name="dmic6" />
     </path>
 
     <path name="ultrasound-gesture1">
