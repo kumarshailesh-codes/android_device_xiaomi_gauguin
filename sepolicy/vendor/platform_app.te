@@ -1,0 +1,1 @@
+allow platform_app surfaceflinger:binder { call transfer };
