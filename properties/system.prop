@@ -202,14 +202,12 @@ ro.infinity.display=1080 x 2400, 120 hz
 
 # Technical Stability Injection (kl.txt fixes)
 persist.vendor.wifi.sap.interface=wlan0
-persist.vendor.wifi.softap.interface=wlan0
 persist.vendor.wifi.vht80_2g=1
 debug.stagefright.ccodec=1
 ro.media.recorder-max-base-layer-fps=60
 
 # Release Champion Injections
 ro.surface_flinger.protected_contents=true
-
 #device details
 ro.mist.display=1080 x 2400, 120 hz
 ro.mist.battery=5000mah
@@ -223,9 +221,3 @@ ro.mist.device.name=MI 10I
 # AppOps and Core Permission Sync
 ro.config.per_app_memcg=false
 persist.sys.fflag.override.settings_provider_model=false
-
-persist.vendor.radio.custom_channels=true
-
-# Pihooks defaults to prevent NumberFormatException
-persist.sys.pihooks_DEVICE_INITIAL_SDK_INT=30
-persist.sys.pihooks_SDK_INT=34
