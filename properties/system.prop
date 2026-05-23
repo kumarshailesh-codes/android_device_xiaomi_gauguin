@@ -67,8 +67,6 @@ ro.product.max_num_touch_points=10
 persist.debug.wfd.enable=0
 persist.sys.print_all_logs=0
 config.disable_dumpheap=true
-profiler.force_disable_err_rpt=1
-profiler.force_disable_ulog=1
 
 # UX Improvements
 ro.config.vc_call_vol_steps=15
@@ -224,4 +222,3 @@ ro.mist.device.name=MI 10I
 # AppOps and Core Permission Sync
 ro.config.per_app_memcg=false
 persist.sys.fflag.override.settings_provider_model=false
-alse
