@@ -174,7 +174,6 @@ ro.vendor.display.sensortap=1
 ro.vendor.fingerprint.cleanup_unused_templates=1
 persist.vendor.fingerprint.ignore_small_template=1
 vendor.audio.offload.track.enable=true
-ro.vendor.qti.sys.fw.m_mem_cap=true
 
 # Full Power Pro Boss Tweak
 sys.use_fifo_ui=1
@@ -225,3 +224,4 @@ ro.mist.device.name=MI 10I
 # AppOps and Core Permission Sync
 ro.config.per_app_memcg=false
 persist.sys.fflag.override.settings_provider_model=false
+alse
