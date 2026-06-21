@@ -17,7 +17,7 @@ debug.sf.enable_hwc_vds=1
 qemu.sf.lcd_density=440
 
 # FUSE passthrough
-persist.sys.fuse.passthrough.enable=false
+persist.sys.fuse.passthrough.enable=true
 ro.sys.sdcardfs=0
 
 # HID RAW
