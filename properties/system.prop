@@ -210,3 +210,25 @@ persist.sys.force_highend_gfx=true
 ro.vendor.qti.sys.fw.bg_apps_limit=60 
 ro.vendor.qti.config.zram=true                                                                                                                     
 persist.vendor.qti.games.gt.prof=1
+
+# Radio config
+ro.telephony.default_network=33,33
+ril.subscription.types=NV,RUIM
+telephony.lteOnCdmaDevice=1
+
+# Enable 5G features and standalone/non-standalone modes
+ro.telephony.5g_capabilities=1
+
+# Qualcomm RIL and Data NR configurations
+persist.vendor.radio.5g_mode_pref=3
+persist.vendor.radio.5g_num_rdds=2
+persist.vendor.radio.data_con_rgs=1
+persist.vendor.radio.force_on_dc=true
+
+# Enable ENDC (E-UTRAN New Radio Dual Connectivity)
+persist.vendor.radio.enable_endc=true
+
+# Optimize signal strength and physical channel reporting for Sub6
+persist.vendor.radio.anr_matching_on=1
+persist.vendor.radio.sib16_support=1
+persist.vendor.radio.barring_int_chk=1
