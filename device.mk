@@ -1,8 +1,5 @@
 LOCAL_PATH := device/xiaomi/gauguin
 
-# Call the Bcr setup
-$(call inherit-product, vendor/bcr/bcr.mk)
-
 #
 # SPDX-FileCopyrightText: The LineageOS Project
 # SPDX-License-Identifier: Apache-2.0
@@ -69,9 +66,10 @@ PRODUCT_SOONG_NAMESPACES += \
     bootable/deprecated-ota \
     hardware/google/interfaces \
     hardware/google/pixel \
-    hardware/lineage/interfaces/power-libperfmgr \
+    hardware/voltage/interfaces/power-libperfmgr \
     hardware/qcom-caf/common/libqti-perfd-client \
     hardware/xiaomi \
+    hardware/qcom-caf/wlan/qcwcn \
     vendor/qcom/opensource/usb/etc
 
 # Boot animation

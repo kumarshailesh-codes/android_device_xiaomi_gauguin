@@ -195,7 +195,7 @@ ro.vendor.display.cabl=0
 ro.adb.secure=1
 
 # Security & Permission Polish
-ro.control_privapp_permissions=enforce
+# ro.control_privapp_permissions=enforce
 
 # Infinity X device info
 ro.product.marketname=Mi 10i

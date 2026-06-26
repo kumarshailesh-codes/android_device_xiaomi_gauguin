@@ -12,10 +12,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/gauguin/device.mk)
 
 # Inherit some common infinity stuff.
-$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
+$(call inherit-product, vendor/voltage/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := infinity_gauguin
+PRODUCT_NAME := lineage_gauguin
 PRODUCT_DEVICE := gauguin
 PRODUCT_MODEL := Gauguin
 PRODUCT_BRAND := Xiaomi
@@ -46,5 +46,3 @@ TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_INCLUDE_GOOGLE_DIALER := false
 MAX_EGL_CACHE_KEY_SIZE := 12*1024
 MAX_EGL_CACHE_SIZE := 2048*1024
-
-$(call inherit-product, vendor/bcr/bcr.mk)
