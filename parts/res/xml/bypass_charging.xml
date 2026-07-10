@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:key="bypass_charging_category"
+        android:title="Motherboard Power Control">
+        <ListPreference
+            android:key="bypass_charging_mode"
+            android:title="@string/bypass_charging_mode_title"
+            android:summary="@string/bypass_charging_mode_summary"
+            android:entries="@array/bypass_charging_mode_entries"
+            android:entryValues="@array/bypass_charging_mode_values"
+            android:defaultValue="0" />
+    </PreferenceCategory>
+</PreferenceScreen>
