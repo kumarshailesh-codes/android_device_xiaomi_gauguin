@@ -262,3 +262,9 @@ persist.vendor.wifi.vht80_2g=1
 # Wi-Fi HAL Configurations
 wifi.interface=wlan0
 ro.boot.wifichip.type=qcom
+
+# Dex2oat thread allocation overrides
+dalvik.vm.dex2oat-cpu-set=4,5,6,7
+dalvik.vm.dex2oat-threads=4
+dalvik.vm.image-dex2oat-cpu-set=4,5,6,7
+dalvik.vm.image-dex2oat-threads=4
