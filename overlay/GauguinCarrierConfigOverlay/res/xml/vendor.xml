@@ -44,6 +44,12 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         </carrier_config>-->
 
     <carrier_config>
+        <!-- Enable VoNR (Voice over 5G) -->
+        <boolean name="vonr_enabled_bool" value="true" />
+        <boolean name="carrier_config_vonr_state" value="true" />
+        <boolean name="carrier_config_vonr_visible" value="true" />
+        <boolean name="vonr_setting_visibility_bool" value="true" />
+
         <boolean name="apn_expand_bool" value="true" />
         <boolean name="world_phone_bool" value="false" />
         <boolean name="allow_adding_apns_bool" value="true" />
