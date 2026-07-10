@@ -9,10 +9,12 @@ audio.sys.routing.latency=0
 ro.af.client_heap_size_kbyte=7168
 
 # eBPF
-ro.bpf.kver_override=5.10.239
+ro.bpf.kver_override=5.10.256
 
 # RKPD
 remote_provisioning.hostname=remoteprovisioning.googleapis.com
+remote_provisioning.connect_timeout_millis=2000
+remote_provisioning.enable_rkpd=true
 
 # eFootball 2026 Gaming & Graphics Acceleration
 debug.game.profile.jp.konami.pesam=2
@@ -21,6 +23,14 @@ debug.sf.disable_backpressure=1
 debug.sf.latch_unsignaled=1
 debug.egl.hw=1
 persist.sys.use_dithering=1
+persist.sys.binary_xml=true
+sys.use_fifo_ui=1
+debug.sf.predict_hwc_composition_strategy=1
+
+# Performance & Multitasking
+ro.config.avoid_gfx_accel=false
+ro.config.low_ram=false
+ro.sys.fw.bg_apps_limit=32
 persist.sys.binary_xml=true
 sys.use_fifo_ui=1
 debug.sf.predict_hwc_composition_strategy=1
