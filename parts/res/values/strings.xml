@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="device_settings_app_name">Xiaomi Parts</string>
+    <string name="bypass_charging_title">Bypass Charging</string>
+    <string name="bypass_charging_summary">Stop charging battery and power the motherboard directly from the charger</string>
+    <string name="bypass_charging_mode_title">Bypass Mode</string>
+    <string name="bypass_charging_disabled">Disabled</string>
+    <string name="bypass_charging_enabled">Enabled (Bypass Battery)</string>
+    <string name="bypass_charging_mode_summary">Toggle direct motherboard powering</string>
+</resources>

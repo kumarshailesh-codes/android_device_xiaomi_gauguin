@@ -1,1 +1,4 @@
 allow platform_app surfaceflinger:binder { call transfer };
+
+# Allow platform_app to read vendor_sysfs_graphics (FPS counter)
+allow platform_app vendor_sysfs_graphics:file r_file_perms;

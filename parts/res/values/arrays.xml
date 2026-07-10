@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="bypass_charging_mode_entries">
+        <item>@string/bypass_charging_disabled</item>
+        <item>@string/bypass_charging_enabled</item>
+    </string-array>
+    <string-array name="bypass_charging_mode_values">
+        <item>0</item>
+        <item>2</item>
+    </string-array>
+</resources>

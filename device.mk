@@ -442,6 +442,9 @@ PRODUCT_PACKAGES += \
 # MiuiCamera
 $(call inherit-product-if-exists, device/xiaomi/miuicamera-gauguin/device.mk)
 
+# Xiaomi Parts (Bypass Charging Setting & Tile)
+PRODUCT_PACKAGES += \n    XiaomiParts
+
 # Production optimizations
 PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
 PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
