@@ -13,3 +13,14 @@ ro.bpf.kver_override=5.10.239
 
 # RKPD
 remote_provisioning.hostname=remoteprovisioning.googleapis.com
+
+# eFootball 2026 Gaming & Graphics Acceleration
+debug.game.profile.jp.konami.pesam=2
+persist.sys.game.perf.jp.konami.pesam=1
+debug.sf.disable_backpressure=1
+debug.sf.latch_unsignaled=1
+debug.egl.hw=1
+persist.sys.use_dithering=1
+persist.sys.binary_xml=true
+sys.use_fifo_ui=1
+debug.sf.predict_hwc_composition_strategy=1
