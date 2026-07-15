@@ -1,3 +1,6 @@
+BUILD_BROKEN_DUP_RULES := true
+WITH_REVANCED := true
+
 #
 # SPDX-FileCopyrightText: The LineageOS Project
 # SPDX-License-Identifier: Apache-2.0
@@ -11,11 +14,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from gauguin device
 $(call inherit-product, device/xiaomi/gauguin/device.mk)
 
-# Inherit some common infinity stuff.
-$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
+# Inherit some common custom stuff.
+$(call inherit-product, vendor/custom/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := infinity_gauguin
+PRODUCT_NAME := gauguin
 PRODUCT_DEVICE := gauguin
 PRODUCT_MODEL := Gauguin
 PRODUCT_BRAND := Xiaomi
@@ -28,9 +31,6 @@ PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildDesc="gauguin-user 12 RKQ1.200826.002 V14.0.2.0.SJSMIXM release-keys" \
     BuildFingerprint=Xiaomi/gauguin_global/gauguin:12/RKQ1.200826.002/V14.0.2.0.SJSMIXM:user/release-keys
-
-# Infinity X Maintainer
-INFINITY_MAINTAINER := "Shailesh"
 
 # GApps
 WITH_GAPPS := true
@@ -47,4 +47,4 @@ TARGET_INCLUDE_GOOGLE_DIALER := false
 MAX_EGL_CACHE_KEY_SIZE := 12*1024
 MAX_EGL_CACHE_SIZE := 2048*1024
 
-$(call inherit-product, vendor/bcr/bcr.mk)
+ASCP_MAINTAINER := Shailesh
