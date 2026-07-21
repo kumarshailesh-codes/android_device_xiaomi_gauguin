@@ -41,12 +41,10 @@ media.stagefright.thumbnail.prefer_hw_codecs=false
 # Performance & Smoothness (Release Stability Edition)
 dalvik.vm.dex2oat-filter=speed
 dalvik.vm.image-dex2oat-filter=speed
-dalvik.vm.dex2oat-threads=8
 debug.hwui.renderer=skiagl
 debug.sf.enable_gl_backpressure=1
 debug.sf.disable_backpressure=0
 debug.cpurend.enable=1
-ro.surface_flinger.use_smart_90_for_video=true
 ro.surface_flinger.set_idle_timer_ms=100
 ro.surface_flinger.set_touch_timer_ms=200
 ro.surface_flinger.set_display_power_timer_ms=1000
@@ -69,8 +67,6 @@ persist.sys.print_all_logs=0
 config.disable_dumpheap=true
 
 # UX Improvements
-ro.config.vc_call_vol_steps=15
-ro.config.media_vol_steps=30
 ro.config.hw_quickpoweron=true
 
 # Background Optimization
@@ -101,7 +97,6 @@ net.tcp.hspap_init_rwnd=20
 net.tcp.umts_init_rwnd=20
 net.tcp.wifi_init_rwnd=20
 net.tcp.lte_init_rwnd=20
-persist.sys.tcp_cong_control=bbr
 
 # Scrolling & Smoothness
 ro.min_pointer_dur=8
@@ -163,8 +158,6 @@ debug.renderengine.backend=gles
 
 
 # Final 100% Stability & Wi-Fi Range
-persist.sys.sqlite.sync_mode=0
-ro.vendor.qti.sys.fw.bg_apps_limit=60
 wifi.supplicant_scan_interval=180
 ro.vendor.display.sensortap=1
 
@@ -174,7 +167,6 @@ persist.vendor.fingerprint.ignore_small_template=1
 vendor.audio.offload.track.enable=true
 
 # Full Power Pro Boss Tweak
-sys.use_fifo_ui=1
 ro.config.pinner_size=512
 persist.sys.pinner.enabled=true
 
@@ -194,12 +186,6 @@ ro.adb.secure=1
 # Security & Permission Polish
 ro.control_privapp_permissions=enforce
 
-# Infinity X device info
-ro.product.marketname=Mi 10i
-ro.infinity.soc=Snapdragon® 750G (SM7225)
-ro.infinity.camera=108MP + 8MP + 2MP + 16MP(front)
-ro.infinity.display=1080 x 2400, 120 hz
-
 # Technical Stability Injection (kl.txt fixes)
 persist.vendor.wifi.sap.interface=wlan0
 persist.vendor.wifi.vht80_2g=1
@@ -211,7 +197,7 @@ ro.surface_flinger.protected_contents=true
 #device details
 ro.mist.display=1080 x 2400, 120 hz
 ro.mist.battery=5000mah
-ro.mist.soc=Snapdragon® 750G
+ro.mist.soc=Snapdragon® 750G (SM7225)
 ro.mist.camera=108MP + 8MP + 2MP
 ro.mist.front=16MP
 ro.mist.platform=SM7225 
@@ -223,8 +209,6 @@ ro.config.per_app_memcg=false
 persist.sys.fflag.override.settings_provider_model=false
 
 # Radio config
-ro.telephony.default_network=33,33
-ril.subscription.types=NV,RUIM
 telephony.lteOnCdmaDevice=1
 
 # Enable 5G features and standalone/non-standalone modes
