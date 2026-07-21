@@ -34,9 +34,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildDesc="gauguin-user 12 RKQ1.200826.002 V14.0.2.0.SJSMIXM release-keys" \
     BuildFingerprint=Xiaomi/gauguin_global/gauguin:12/RKQ1.200826.002/V14.0.2.0.SJSMIXM:user/release-keys
 
-# Infinity X Maintainer
-INFINITY_MAINTAINER := "Shailesh"
-
 # GApps
 WITH_GAPPS := true
 
@@ -56,7 +53,4 @@ $(call inherit-product, vendor/bcr/bcr.mk)
 
 # MistOS
 MISTOS_MAINTAINER := Shailesh
-WITH_GMS := true
-TARGET_ENABLE_BLUR := true
-TARGET_SUPPORTS_QUICK_TAP := true
 BYPASS_CHARGE_SUPPORTED := true
