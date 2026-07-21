@@ -157,7 +157,6 @@ vendor.hw.fm.init=0
 ro.vendor.fm.use_audio_session=true
 
 # Graphics
-debug.egl.hw=0
 debug.sf.hw=1
 debug.sf.auto_latch_unsignaled=0
 debug.sf.enable_gl_backpressure=1
@@ -269,7 +268,7 @@ ro.telephony.default_network=33
 persist.vendor.radio.rat_on=combine
 
 # Dex2oat thread allocation overrides
-dalvik.vm.dex2oat-cpu-set=4,5,6,7
-dalvik.vm.dex2oat-threads=4
-dalvik.vm.image-dex2oat-cpu-set=4,5,6,7
-dalvik.vm.image-dex2oat-threads=4
+dalvik.vm.dex2oat-cpu-set=6,7
+dalvik.vm.dex2oat-threads=2
+dalvik.vm.image-dex2oat-cpu-set=6,7
+dalvik.vm.image-dex2oat-threads=2
