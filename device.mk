@@ -140,10 +140,6 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.camera.full.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.full.xml \
     frameworks/native/data/etc/android.hardware.camera.raw.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.raw.xml
 
-# Configstore
-PRODUCT_PACKAGES += \
-    disable_configstore
-
 # Data Services
 $(call inherit-product, vendor/qcom/opensource/dataservices/dataservices_vendor_product.mk)
 
@@ -446,7 +442,8 @@ PRODUCT_PACKAGES += \
 $(call inherit-product-if-exists, device/xiaomi/miuicamera-gauguin/device.mk)
 
 # Xiaomi Parts (Bypass Charging Setting & Tile)
-PRODUCT_PACKAGES += \n    XiaomiParts
+PRODUCT_PACKAGES += \
+    XiaomiParts
 
 # Production optimizations
 PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
