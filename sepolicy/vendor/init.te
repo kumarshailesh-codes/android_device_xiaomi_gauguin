@@ -1,8 +1,2 @@
 # Charge Bypass
 allow init sysfs_battery_supply:file rw_file_perms;
-
-allow vendor_init vendor_sysfs_axburst_gpu:file w_file_perms;
-allow vendor_init vendor_sysfs_axburst_mem:file w_file_perms;
-
-allow init vendor_sysfs_axburst_gpu:file rw_file_perms;
-allow init vendor_sysfs_axburst_mem:file rw_file_perms;
