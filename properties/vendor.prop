@@ -157,7 +157,6 @@ vendor.hw.fm.init=0
 ro.vendor.fm.use_audio_session=true
 
 # Graphics
-debug.egl.hw=0
 debug.sf.hw=1
 debug.sf.auto_latch_unsignaled=0
 debug.sf.enable_gl_backpressure=1
@@ -222,6 +221,9 @@ ro.telephony.default_cdma_sub=0
 ro.telephony.call_ring.multiple=false
 ro.vendor.radio.5g=3
 telephony.lteOnCdmaDevice=1
+persist.vendor.radio.custom_channels=true
+ro.telephony.default_network=33
+persist.vendor.radio.rat_on=combine
 
 # Sensor
 persist.vendor.sensors.debug.ssc_qmi_debug=false
@@ -252,13 +254,17 @@ ro.apk_verity.mode=2
 
 # WiFi
 wifi.aware.interface=wifi-aware0
-
-# Zygote
-zygote.critical_window.minute=10
 persist.vendor.softap.vht80=1
 persist.vendor.wifi.dynamic_energy_window=1
 persist.vendor.wifi.vht80_2g=1
-
-# Wi-Fi HAL Configurations
 wifi.interface=wlan0
 ro.boot.wifichip.type=qcom
+
+# Zygote
+zygote.critical_window.minute=10
+
+# Dex2oat thread allocation overrides
+dalvik.vm.dex2oat-cpu-set=6,7
+dalvik.vm.dex2oat-threads=2
+dalvik.vm.image-dex2oat-cpu-set=6,7
+dalvik.vm.image-dex2oat-threads=2
