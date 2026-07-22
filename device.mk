@@ -1,9 +1,9 @@
-LOCAL_PATH := device/xiaomi/gauguin
-
 #
 # SPDX-FileCopyrightText: The LineageOS Project
 # SPDX-License-Identifier: Apache-2.0
 #
+
+LOCAL_PATH := device/xiaomi/gauguin
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/non_ab_device.mk)
 
@@ -443,7 +443,8 @@ PRODUCT_PACKAGES += \
 $(call inherit-product-if-exists, device/xiaomi/miuicamera-gauguin/device.mk)
 
 # Xiaomi Parts (Bypass Charging Setting & Tile)
-PRODUCT_PACKAGES += \n    XiaomiParts
+PRODUCT_PACKAGES += \
+         XiaomiParts
 
 # Production optimizations
 PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
@@ -460,5 +461,3 @@ PRODUCT_COPY_FILES += \
     device/xiaomi/gauguin/configs/axion/ax_perf_boosts.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ax_perf_boosts.xml \
     device/xiaomi/gauguin/configs/axion/ax_perf_thermal.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ax_perf_thermal.xml \
     device/xiaomi/gauguin/configs/axion/ax_perf_threads.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ax_perf_threads.xml
-# Qualcomm Specific Performance flags
-TARGET_DISABLES_LIBPERF := true
