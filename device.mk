@@ -454,10 +454,3 @@ PRODUCT_ENFORCE_RRO_EXCLUDED_PACKAGES := \
     com.google.android.gms \
     com.google.android.gsf \
     com.android.vending
-
-# AxBurstEngine (Performance Config)
-PRODUCT_COPY_FILES += \
-    device/xiaomi/gauguin/configs/axion/ax_perf_resources.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ax_perf_resources.xml \
-    device/xiaomi/gauguin/configs/axion/ax_perf_boosts.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ax_perf_boosts.xml \
-    device/xiaomi/gauguin/configs/axion/ax_perf_thermal.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ax_perf_thermal.xml \
-    device/xiaomi/gauguin/configs/axion/ax_perf_threads.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ax_perf_threads.xml

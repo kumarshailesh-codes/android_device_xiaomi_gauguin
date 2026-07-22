@@ -37,16 +37,6 @@ TARGET_NEEDS_DOZE_FIX := false
 
 TARGET_INCLUDE_AXFX := true
 
-# safely disable libperfmgr without breaking boot (set to true)
-TARGET_DISABLES_LIBPERF ?= false
-
-# CPU governor support
-PERF_GOV_SUPPORTED := true
-PERF_DEFAULT_GOV := schedutil
-PERF_ANIM_OVERRIDE := true
-
-TARGET_SUPPORTED_REFRESH_RATES := 60,90,120
-
 TORCH_STR_SUPPORTED := true
 
 BYPASS_CHARGE_SUPPORTED := true
