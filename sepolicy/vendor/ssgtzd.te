@@ -1,0 +1,2 @@
+# Allow vendor_ssgtzd to setattr on vendor_data_file directories
+allow vendor_ssgtzd vendor_data_file:dir setattr;

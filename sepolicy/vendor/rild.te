@@ -5,3 +5,10 @@ set_prop(rild, vendor_sno_prop)
 allow rild vendor_qdisplay_service:service_manager find;
 
 binder_call(rild, hal_graphics_composer_default)
+
+# Dontaudit default_prop reads from XIAOMI STATS thread
+dontaudit rild default_prop:file read;
+
+# Explicit binder IPC between rild and hal_graphics_composer_default (e.g. NasModemEndPoin, XIAOMI MIPI)
+allow rild hal_graphics_composer_default:binder { call transfer };
+allow hal_graphics_composer_default rild:binder { call transfer };

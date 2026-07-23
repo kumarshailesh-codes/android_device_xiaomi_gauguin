@@ -1,0 +1,2 @@
+# Dontaudit fsck getting attributes of sysfs files
+dontaudit fsck sysfs:file getattr;
