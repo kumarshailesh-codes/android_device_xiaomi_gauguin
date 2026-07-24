@@ -36,7 +36,7 @@ media.stagefright.enable-http=true
 media.stagefright.enable-player=true
 media.stagefright.enable-qcp=true
 media.stagefright.enable-scan=true
-media.stagefright.thumbnail.prefer_hw_codecs=false
+media.stagefright.thumbnail.prefer_hw_codecs=true
 
 # Performance & Smoothness (Release Stability Edition)
 dalvik.vm.dex2oat-filter=speed
@@ -199,7 +199,6 @@ ro.media.recorder-max-base-layer-fps=60
 ro.surface_flinger.protected_contents=true
 
 persist.sys.force_highend_gfx=true
-ro.vendor.qti.config.zram=true                                                                                                                     
 persist.vendor.qti.games.gt.prof=1
 
 # Radio config

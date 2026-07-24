@@ -25,7 +25,3 @@ ro.config.avoid_gfx_accel=false
 ro.config.low_ram=false
 ro.sys.fw.bg_apps_limit=24
 
-# RKPD
-remote_provisioning.hostname=remoteprovisioning.googleapis.com
-remote_provisioning.connect_timeout_millis=2000
-remote_provisioning.enable_rkpd=true
