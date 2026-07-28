@@ -13,7 +13,7 @@ persist.data.netmgrd.qos.enable=true
 ro.vendor.use_data_netmgrd=true
 
 # Display
-debug.sf.enable_hwc_vds=1
+debug.sf.enable_hwc_vds=0
 qemu.sf.lcd_density=440
 
 # FUSE passthrough

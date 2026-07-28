@@ -157,10 +157,10 @@ vendor.hw.fm.init=0
 ro.vendor.fm.use_audio_session=true
 
 # Graphics
-debug.sf.hw=1
+debug.sf.hw=0
 debug.sf.auto_latch_unsignaled=0
 debug.sf.enable_gl_backpressure=1
-debug.sf.latch_unsignaled=0
+debug.sf.latch_unsignaled=1
 debug.sf.predict_hwc_composition_strategy=0
 persist.sys.sf.color_mode=0
 persist.sys.sf.color_saturation=1.0
@@ -168,7 +168,7 @@ persist.sys.sf.native_mode=2
 ro.opengles.version=196610
 ro.hardware.egl=adreno
 ro.hardware.vulkan=adreno
-vendor.gralloc.disable_ubwc=0
+vendor.gralloc.disable_ubwc=1
 
 # Incremental FS
 ro.incremental.enable=true
@@ -178,7 +178,7 @@ ro.hardware.keystore_desede=true
 
 # Media
 debug.stagefright.c2inputsurface=-1
-vendor.media.target.version=2
+vendor.media.target.version=3
 ro.vendor.media.video.vpp.support=true
 vendor.media.omx=0
 

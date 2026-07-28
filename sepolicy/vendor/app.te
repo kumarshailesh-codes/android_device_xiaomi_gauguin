@@ -3,3 +3,7 @@ allow { appdomain -isolated_app_all } vendor_xdsp_device:chr_file r_file_perms;
 # Allow apps to read mlipay and IFAA props
 get_prop({ appdomain -isolated_app_all }, vendor_fingerprint_prop)
 get_prop({ appdomain -isolated_app_all }, vendor_tee_listener_prop)
+
+# Allow untrusted apps to relabel downloaded files to media_rw_data_file (fixes Telegram file saving)
+allow { untrusted_app untrusted_app_25 untrusted_app_27 untrusted_app_29 untrusted_app_30 untrusted_app_32 } media_rw_data_file:file { relabelfrom relabelto };
+allow { untrusted_app untrusted_app_25 untrusted_app_27 untrusted_app_29 untrusted_app_30 untrusted_app_32 } media_rw_data_file:dir { relabelfrom relabelto };
