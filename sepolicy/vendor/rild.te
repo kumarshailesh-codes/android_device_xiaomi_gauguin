@@ -3,3 +3,6 @@ set_prop(rild, vendor_deviceid_prop)
 set_prop(rild, vendor_sno_prop)
 
 allow rild vendor_qdisplay_service:service_manager find;
+
+# Allow rild to make binder calls to hal_graphics_composer_default
+binder_call(rild, hal_graphics_composer_default)
