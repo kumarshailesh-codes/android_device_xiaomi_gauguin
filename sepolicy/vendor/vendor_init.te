@@ -3,6 +3,7 @@ set_prop(vendor_init, vendor_camera_prop)
 allow vendor_init {
   proc_dirty
   proc
+  proc_sched
 }:file w_file_perms;
 
 allow vendor_init block_device:lnk_file setattr;
