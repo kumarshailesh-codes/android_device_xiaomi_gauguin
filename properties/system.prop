@@ -213,6 +213,10 @@ persist.vendor.wifi.vht80_2g=1
 debug.stagefright.ccodec=1
 ro.media.recorder-max-base-layer-fps=60
 
+# Disable WiFi Multi-STA to prevent HAL -95 errors on A16 QPR2
+persist.vendor.wifi.multista=false
+persist.sys.fflag.override.settings_wifi_multista=false
+
 # Release Champion Injections
 ro.surface_flinger.protected_contents=true
 
