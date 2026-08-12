@@ -1,3 +1,6 @@
 # Access to the sysfs LED files
 allow hal_light_default sysfs_leds:dir r_dir_perms;
 allow hal_light_default sysfs_leds:file rw_file_perms;
+
+# Allow hal_light_default to read sysfs files (max_brightness)
+allow hal_light_default sysfs:file r_file_perms;
