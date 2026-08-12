@@ -36,7 +36,11 @@ media.stagefright.enable-http=true
 media.stagefright.enable-player=true
 media.stagefright.enable-qcp=true
 media.stagefright.enable-scan=true
-media.stagefright.thumbnail.prefer_hw_codecs=false
+media.stagefright.thumbnail.prefer_hw_codecs=true
+
+# UI & Browser HW Acceleration
+persist.device_config.render_minimizing_latency=true
+persist.sys.perf.scroll_opt=true
 
 # Performance & Smoothness (Release Stability Edition)
 dalvik.vm.dex2oat-filter=speed
