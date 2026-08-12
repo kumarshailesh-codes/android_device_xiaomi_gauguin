@@ -11,11 +11,6 @@ ro.af.client_heap_size_kbyte=7168
 # eBPF
 ro.bpf.kver_override=5.10.256
 
-# RKPD
-remote_provisioning.hostname=remoteprovisioning.googleapis.com
-remote_provisioning.connect_timeout_millis=2000
-remote_provisioning.enable_rkpd=true
-
 # eFootball 2026 Gaming & Graphics Acceleration
 debug.game.profile.jp.konami.pesam=2
 persist.sys.game.perf.jp.konami.pesam=1
