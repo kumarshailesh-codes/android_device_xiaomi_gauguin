@@ -30,3 +30,6 @@ ro.vendor.oem.sno                               u:object_r:vendor_sno_prop:s0
 
 # Thermal
 vendor.sys.thermal.                             u:object_r:vendor_thermal_normal_prop:s0
+
+# Wi-Fi
+ro.boot.wifichip.type                           u:object_r:vendor_public_vendor_default_prop:s0
