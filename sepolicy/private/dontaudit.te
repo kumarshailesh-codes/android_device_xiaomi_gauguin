@@ -6,3 +6,9 @@ dontaudit linkerconfig self:capability kill;
 
 # b/152468658
 dontaudit vdc self:capability kill;
+
+# Silence harmless app checks for SELinux status
+dontaudit untrusted_app_all selinuxfs:file read;
+
+# Silence harmless binder transaction log read warnings during ANR collection
+dontaudit system_server binderfs_logs_transactions:file read;
