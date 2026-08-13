@@ -40,7 +40,6 @@ media.stagefright.thumbnail.prefer_hw_codecs=true
 
 # UI & Browser HW Acceleration
 persist.device_config.render_minimizing_latency=true
-persist.sys.perf.scroll_opt=true
 
 # Performance & Smoothness (Release Stability Edition)
 dalvik.vm.dex2oat-filter=speed
@@ -221,8 +220,6 @@ persist.sys.fflag.override.settings_wifi_multista=false
 ro.surface_flinger.protected_contents=true
 
 # Radio config
-ro.telephony.default_network=33,33
-ril.subscription.types=NV,RUIM
 telephony.lteOnCdmaDevice=1
 
 # Enable 5G features and standalone/non-standalone modes
